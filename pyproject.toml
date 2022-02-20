@@ -1,0 +1,24 @@
+
+[tool.poetry]
+name = "sparrow"
+version = "0.1.0"
+description = "An arrow interface for Spark's RDDs"
+authors = ["Peter Vyboch <pvyboch1@gmail.com>"]
+license = "MIT"
+
+packages = [{ include = "sparrow", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+pyspark = "^3.2.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+python_files = ["*test*.py"]
+python_functions = ["test"]
+minversion = "6.0"
+addopts = "--cov=sparrow --cov-report=term-missing"
+testpaths = ["test"]

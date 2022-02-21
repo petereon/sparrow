@@ -30,8 +30,8 @@ jobs:
         pipenv install
     - name: Build and install the library
       run: |
-        poetry build
-        pip install ./dist/$(ls ./dist | grep .whl)
+        pipenv run poetry build
+        pipenv run pip install ./dist/$(ls ./dist | grep .whl)
     - name: Test with pytest
       run: |
         pipenv run pytest

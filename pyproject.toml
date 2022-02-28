@@ -1,7 +1,7 @@
 
 [tool.poetry]
 name = "sparrow"
-version = "0.1.0"
+version = "1.0.3"
 description = "An arrow interface for Spark RDDs"
 authors = ["Peter Vyboch <pvyboch1@gmail.com>"]
 license = "MIT"

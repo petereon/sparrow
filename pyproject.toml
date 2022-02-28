@@ -1,8 +1,8 @@
 
 [tool.poetry]
-name = "sparrow"
+name = "pysparrow"
 version = "1.0.3"
-description = "An arrow interface for Spark RDDs"
+description = "An arrow interface for PySpark RDDs"
 authors = ["Peter Vyboch <pvyboch1@gmail.com>"]
 license = "MIT"
 repository = 'https://github.com/petereon/sparrow'

@@ -2,9 +2,19 @@
 [tool.poetry]
 name = "sparrow"
 version = "0.1.0"
-description = "An arrow interface for Spark's RDDs"
+description = "An arrow interface for Spark RDDs"
 authors = ["Peter Vyboch <pvyboch1@gmail.com>"]
 license = "MIT"
+repository = 'https://github.com/petereon/sparrow'
+readme = 'README.md'
+keywords = ['spark', 'arrow', '>>', 'map', 'mappers']
+classifiers = [
+    'License :: OSI Approved :: MIT License',
+    'Programming Language :: Python :: 3',
+    'Natural Language :: English',
+    'Topic :: Software Development :: Libraries',
+    'Typing :: Typed'
+]
 
 packages = [{ include = "sparrow", from = "src" }]
 
